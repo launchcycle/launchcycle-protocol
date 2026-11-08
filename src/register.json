@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "note": "One record per external fact. state is stated, absent or unconfirmed. Only stated records carry value or url. The checked field is data only and never reaches dist.",
+  "records": {
+    "chain": {
+      "label": "Chain",
+      "state": "stated",
+      "value": "Solana",
+      "rpc": "https://solana-rpc.publicnode.com",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-11-08"
+    },
+    "ca": {
+      "label": "Contract",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-11-08"
+    },
+    "x": {
+      "label": "X",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-11-08"
+    },
+    "github": {
+      "label": "GitHub",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-11-08"
+    },
+    "market": {
+      "label": "Market feed",
+      "state": "stated",
+      "url": "https://api.dexscreener.com/token-boosts/top/v1",
+      "pairs": "https://api.dexscreener.com/tokens/v1/solana/",
+      "ownPair": "https://api.dexscreener.com/latest/dex/tokens/",
+      "ownMeta": "https://frontend-api.pump.fun/coins/",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-11-08"
+    }
+  }
+}

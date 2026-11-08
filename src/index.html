@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CYCLE | A loop that pays itself back</title>
+  <meta name="description" content="CYCLE is a coin on Solana built around a closed circuit. Watch the live board and read the register as facts get named.">
+  <meta property="og:title" content="CYCLE">
+  <meta property="og:description" content="A loop that pays itself back. A live board and an open register.">
+  <meta property="og:image" content="assets/og.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/logo-192.png">
+  <link rel="preload" href="fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <a class="skip" href="#board">Jump to the board</a>
+
+  <div class="top" id="top">
+    <section class="ca" id="ca" aria-label="Contract address">
+<!--CA_SLOT-->
+    </section>
+    <header class="bar">
+      <a class="brand" href="#top" aria-label="CYCLE home">
+        <img src="assets/logo-192.png" width="36" height="36" alt="" decoding="async">
+        <span class="brand-word">CYCLE</span>
+      </a>
+      <nav class="nav" aria-label="Page parts">
+        <a href="#board">Board</a>
+        <a href="#loop">Loop</a>
+        <a href="#register">Register</a>
+      </nav>
+      <div class="socials" id="socials" aria-label="Profiles">
+<!--SOCIALS-->
+      </div>
+    </header>
+  </div>
+
+  <div class="ticker" id="ticker" aria-label="Live price strip">
+    <span class="ticker-label"><i class="dot" aria-hidden="true"></i>Live</span>
+    <div class="ticker-viewport">
+      <div class="ticker-track" id="tickerTrack">
+        <span class="tick skeleton-chip" aria-hidden="true"></span>
+        <span class="tick skeleton-chip" aria-hidden="true"></span>
+        <span class="tick skeleton-chip" aria-hidden="true"></span>
+        <span class="tick skeleton-chip" aria-hidden="true"></span>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero wrap" aria-labelledby="h-hero">
+      <div class="hero-copy">
+        <p class="pill" data-reveal><i class="dot" aria-hidden="true"></i><span id="pillText">Live on Solana</span></p>
+        <h1 id="h-hero" data-reveal><span class="hero-word">CYCLE</span><span class="hero-sub">A loop that pays itself back.</span></h1>
+        <p class="lede" data-reveal>One coin, one closed circuit. Whatever the project earns is sent back toward its own coin, and the circuit begins another lap. No side doors, no fine print written in smoke.</p>
+        <div class="actions" data-reveal>
+          <a class="btn btn-primary" href="#board">Open the board</a>
+          <a class="btn btn-ghost" href="#loop">Watch one lap</a>
+        </div>
+        <ul class="footnote" data-reveal>
+          <li>Built for Solana</li>
+          <li>Open register</li>
+          <li>Loop first</li>
+        </ul>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="layer layer-mesh" data-depth="0.25"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i></div>
+        <div class="layer layer-grid" data-depth="0.5"></div>
+        <div class="layer layer-stars" data-depth="0.9"></div>
+        <div class="layer layer-plus" data-depth="1.2"><i class="plus p1"></i><i class="plus p2"></i><i class="plus p3"></i><i class="plus p4"></i></div>
+        <div class="glass g1" data-depth="1.6">
+          <span class="g-label">Strongest mover</span>
+          <strong class="g-value" id="heroMover">—</strong>
+          <span class="g-sub" id="heroMoverSub">standing by</span>
+        </div>
+        <div class="glass g2" data-depth="2.2">
+          <span class="g-label">Board volume</span>
+          <strong class="g-value" id="heroVolume">—</strong>
+          <span class="g-sub">24h, top rows</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap stats" aria-label="Board figures" id="stats">
+      <div class="stat spot" data-reveal><span class="stat-label">Tokens in view</span><strong class="stat-value" id="statCount" data-flash>—</strong></div>
+      <div class="stat spot" data-reveal><span class="stat-label">Board volume</span><strong class="stat-value" id="statVolume" data-flash>—</strong></div>
+      <div class="stat spot" data-reveal><span class="stat-label">Board depth</span><strong class="stat-value" id="statDepth" data-flash>—</strong></div>
+      <div class="stat spot" data-reveal><span class="stat-label">Strongest mover</span><strong class="stat-value" id="statMover" data-flash>—</strong></div>
+    </section>
+
+    <section class="wrap section" id="board" aria-labelledby="h-board">
+      <div class="section-heading" data-reveal>
+        <div>
+          <span class="eyebrow">Market board</span>
+          <h2 id="h-board">What the chain is chasing right now</h2>
+          <p class="sub">Pulled live and refreshed on a steady beat. The board never waits on our own contract.</p>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Board order">
+          <button class="tab is-on" role="tab" aria-selected="true" data-sort="volume" type="button">By volume</button>
+          <button class="tab" role="tab" aria-selected="false" data-sort="change" type="button">By momentum</button>
+          <button class="tab" role="tab" aria-selected="false" data-sort="liquidity" type="button">By depth</button>
+        </div>
+      </div>
+
+      <p class="feed-error" id="feedError" role="status" hidden></p>
+
+      <div class="board panel" id="boardPanel" data-reveal>
+        <div class="board-head" aria-hidden="true">
+          <span>#</span><span>Token</span><span>Price</span><span>24h</span><span>Volume</span><span>Liquidity</span><span></span>
+        </div>
+        <ol class="rows" id="rows" aria-live="off"></ol>
+      </div>
+    </section>
+
+    <section class="wrap section" aria-labelledby="h-why">
+      <div class="section-heading" data-reveal>
+        <div>
+          <span class="eyebrow">Principles</span>
+          <h2 id="h-why">Built to stay legible</h2>
+        </div>
+      </div>
+      <div class="cards">
+        <article class="card spot" data-reveal>
+          <span class="card-no">01</span>
+          <h3>Closed circuit</h3>
+          <p>Earnings made inside the project are aimed back at their coin. The trail is short enough to trace by eye.</p>
+        </article>
+        <article class="card spot" data-reveal>
+          <span class="card-no">02</span>
+          <h3>Plain mechanics</h3>
+          <p>Few moving parts, each one named. If a part needs a paragraph to explain, it stays out.</p>
+        </article>
+        <article class="card spot" data-reveal>
+          <span class="card-no">03</span>
+          <h3>Open register</h3>
+          <p>Each outside fact lives as a single record. Lacking a stated record, the line stays pending in plain sight.</p>
+        </article>
+        <article class="card spot" data-reveal>
+          <span class="card-no">04</span>
+          <h3>Calm surface</h3>
+          <p>Motion serves meaning here. Turn motion off in your system settings and the page simply stills.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap section" id="loop" aria-labelledby="h-loop">
+      <div class="section-heading" data-reveal>
+        <div>
+          <span class="eyebrow">The loop</span>
+          <h2 id="h-loop">One lap, four beats</h2>
+        </div>
+      </div>
+      <ol class="beats">
+        <li class="beat panel spot" data-reveal><span class="beat-no">I</span><h3>Gather</h3><p>Project earnings are collected in one place instead of scattered across wallets.</p></li>
+        <li class="beat panel spot" data-reveal><span class="beat-no">II</span><h3>Return</h3><p>The pot is aimed at the coin it came from, in daylight, along a trail anyone can trace.</p></li>
+        <li class="beat panel spot" data-reveal><span class="beat-no">III</span><h3>Retire</h3><p>Supply the loop reclaims can leave circulation for good.</p></li>
+        <li class="beat panel spot" data-reveal><span class="beat-no">IV</span><h3>Again</h3><p>A fresh lap begins from a leaner base, and the circuit closes on itself.</p></li>
+      </ol>
+    </section>
+
+    <section class="wrap section" id="register" aria-labelledby="h-reg">
+      <div class="section-heading" data-reveal>
+        <div>
+          <span class="eyebrow">Register</span>
+          <h2 id="h-reg">Facts, once they are stated</h2>
+          <p class="sub">Each line below flips on only when its record does. Pending means nobody has put a name to it yet.</p>
+        </div>
+      </div>
+      <ul class="chips" id="chips" data-reveal>
+<!--CHIPS-->
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap foot">
+      <div class="foot-brand"><img src="assets/logo-192.png" width="36" height="36" alt="" decoding="async"><span class="brand-word">CYCLE</span></div>
+      <p class="foot-note">Runs on Solana. Prices arrive from an open feed and appear as received. Nothing here is investment guidance.</p>
+      <nav class="foot-nav" aria-label="Footer"><a href="#board">Board</a><a href="#loop">Loop</a><a href="#register">Register</a></nav>
+    </div>
+  </footer>
+
+  <noscript><p class="noscript">The board needs scripts. Turn them on to see live rows.</p></noscript>
+</body>
+</html>

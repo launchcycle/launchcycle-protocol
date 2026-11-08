@@ -1,0 +1,315 @@
+[object Object]
+forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported
+for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+change click focusin focusout input keydown keyup selectionchange
+focusout contextmenu dragend focusin keydown keyup mousedown mouseup selectionchange
+compositionend focusout keydown keypress keyup mousedown
+compositionstart focusout keydown keypress keyup mousedown
+compositionupdate focusout keydown keypress keyup mousedown
+abort canplay canplaythrough durationchange emptied encrypted ended error loadeddata loadedmetadata loadstart pause play playing progress ratechange resize seeked seeking stalled suspend timeupdate volumechange waiting
+nested under path
+will be treated as if it were
+but pathname
+💿 Hey developer 👋
+You can provide a way better UX than this when your app throws errors by providing your own
+prop on your route.
+Unexpected Application Error!
+No `HydrateFallback` element provided to render during initial hydration
+useFormAction must be used inside a RouteContext
+Close wallet dialog
+Wallet connected
+Connect to Orbit
+button secondary full-width
+Disconnect wallet
+No compatible wallet detected. Install or unlock a Wallet Standard wallet such as Phantom or Solflare, then return here.
+Waiting for your wallet…
+Solana Mainnet · You control your keys
+WalletProvider is required.
+button wallet-button
+Main navigation
+Create token
+noopener noreferrer
+Latest launches
+Discover tokens created on Orbit
+Launch Operations
+01 / LAUNCH REGISTRY
+Community Callouts Feed
+02 / SIGNAL OPERATIONS
+Fuel Processing
+Buybacks & Burns Terminal
+03 / PROCESSING LOG
+RECENT LAUNCHES
+Launch feed unavailable.
+No launches recorded yet.
+Acquiring launch registry…
+Explore launches
+History feed unavailable.
+Reading onchain activity records…
+Token totals
+Select token for buyback and burn totals
+Total bought back
+Total burned
+Totals for the selected token · all recorded history
+No buyback or burn activity recorded yet. Token totals are unavailable.
+RECENT PROCESSING LOGS
+No transaction link
+Open Buybacks & Burns
+Expand facility terminal
+Collapse facility terminal
+Close facility terminal and return to overview
+COMMUNITY TRANSMISSIONS
+Community callouts load with live launches. Explore token conversations from the directory.
+Explore token conversations
+FACILITY SELECTED
+Color: Alpha component of
+will be ignored.
+not supported, using
+#define OPAQUE
+#define varying out
+#define varying in
+has no shadow.
+. .morphTargetsRelative must be consistent throughout all geometries.
+Decorative service traffic
+Cinematic industrial rocket launch facility. Drag to orbit and scroll to zoom.
+Launch Tower
+Create and discover tokens from the heart of the launch facility.
+Create Token
+02 / COMMUNITY SIGNAL
+Follow community callouts and discover conversations around Solana tokens.
+Explore Tokens
+03 / FUEL OPERATIONS
+Track token buybacks, burns, and onchain transaction activity.
+Launch tower
+Fuel processing
+Orbit rocket launch complex
+Preparing launch complex
+Orbit / LAUNCH OPERATIONS
+Launch @solana coins through pump.fun without block - 0 buys, zero vamps, and every fee goes to buyback-and-burn.
+Explore missions
+The 3D view is unavailable on this device. All launch, discovery, and history pages remain accessible.
+Explore Launches
+GROUND OPERATIONS / SOLANA
+Select to focus
+DRAG TO EXPLORE
+SCROLL TO ZOOM
+Launch facility focus
+Resume atmosphere
+Pause atmosphere
+24h price change
+Bonding progress
+MARKET RECONNAISSANCE
+Acquiring telemetry…
+Loading market data for the selected mission.
+No mission selected
+Open mission
+FLIGHT TELEMETRY / SCHEMATIC
+SPACEPORT OPERATIONS / SCHEMATIC
+Orbit  /  MISSION CONTROL
+Display active
+Spaceport mission directory control room
+Orbit / SPACEPORT OPERATIONS
+Mission directory
+MISSION CONTROL
+Preparing control room…
+Refresh failed. Showing the last loaded tokens.
+Filter by quote pair
+Search coins
+Search name, ticker, or mint
+Filter coins
+Taking a moment to reconnect.
+Visit the launch studio
+Market cap / FDV
+Token market
+button secondary
+No tokens found.
+Try a different search or explore all coins.
+Be the first to put your idea on-chain. Your token belongs here.
+button primary
+Loading tokens
+Confirmed launches only
+Market coverage varies · Refreshes every 15s
+Market telemetry
+Right drag to pan
+Scroll or pinch to zoom
+Drag to explore the refinery
+Orbit / INDUSTRIAL SECTOR 03
+Fuel for the next trajectory.
+FUEL REFINERY · NIGHT OPERATIONS
+Preparing the fuel refinery…
+DRAG TO EXPLORE / SCROLL TO ZOOM
+Resume ambient animation
+Pause ambient animation
+Buybacks and burns terminal
+ONCHAIN LEDGER
+THE PUBLIC LEDGER
+Follow every buyback and burn recorded by Orbit.
+Refreshes every 15s
+Transaction receipts
+Newest first · actual recorded amounts
+Recorded operations
+Drag to explore the rocket assembly hangar
+Berkshire Hathaway B
+Native Solana
+Tokenized assets
+Your quote asset
+Enter a Solana token mint to check compatibility.
+Checking quote configuration…
+Unable to verify this quote:
+This quote is not supported.
+Rocket assembly launch studio
+Orbit / ASSEMBLY DIVISION
+Ideas take flight here.
+ROCKET ASSEMBLY HANGAR / BAY 01
+Preparing the assembly hangar…
+DRAG TO ORBIT · RIGHT DRAG TO PAN · SCROLL TO ZOOM
+Resume hangar animation
+Pause hangar animation
+Mission panels
+01 / MISSION CONFIGURATION
+Configure your mission.
+Give your idea an identity. Choose its market.
+Make it recognizable.
+The details that make your token yours.
+Drop your token image here
+browse files
+Add social links
+Choose its market.
+The quote asset for your token’s market.
+Stock quote tokens
+No matching stocks.
+Your opening move.
+An initial buy is completely optional.
+Enter 0 to launch without a buy. An initial buy executes atomically with creation, with a 1% slippage cap. SOL is required for network fees and account creation.
+button primary full-width
+Launch token
+Connect wallet to launch
+02 / LAUNCH PREVIEW
+Your next mission.
+Identity, market, and launch readiness.
+Your token, taking shape
+Live preview
+Paired with
+Launch summary
+Solana Mainnet
+Launch protocol
+Trading pair
+Network fees
+Final fees are shown in your wallet before you sign.
+A small idea can start something big.
+Make it yours. Launch on Orbit.
+You sign the launch with your wallet. Review all transaction details before approving.
+quote asset · SOL network fees · Your signature
+Welcome to Orbit
+How It Works
+The launch lifecycle
+Compatibility & mint identity
+Create your token
+On-chain creation
+Available liquidity
+Explore the market
+Price impact & slippage
+Fees & quote requirements
+Verify before signing
+Common questions
+Technical glossary
+Documentation sections
+Mission handbook
+MISSION HANDBOOK / INDEX
+Creation studio →
+ON THIS PAGE
+On this page
+Section overview
+Reading progress
+Pump.fun reference →
+Chart unavailable until a tradable pool is indexed.
+Chart hidden. Open it on GeckoTerminal anytime.
+Open on GeckoTerminal
+Chart blocked or blank? Open it on GeckoTerminal, then retry.
+Community stream
+Token talk, on Orbit
+Callout token
+Your callout
+What caught your eye?
+Post callout
+Publishing requests an off-chain message signature. No SOL spent.
+More on this token
+Refresh callouts
+Be the first to call it.
+Share your perspective on this token.
+Buybacks and burns
+View the public ledger
+All receipts
+Confirmed SOL spent
+Tokens burned · confirmed
+Buyback and burn transactions
+more receipts
+View token history
+No buyback or burn activity recorded yet.
+Acquiring mission telemetry…
+MISSION NOT FOUND
+Token data unavailable.
+Back to explore
+Orbit / MARKET TERMINAL
+Token social links
+Behind the token
+Mission systems
+03 / TOKEN INTELLIGENCE
+Token information
+Token intelligence
+Progress unavailable
+Skip to content
+404 / MISSION NOT FOUND
+This page hasn't launched.
+Return to the spaceport mission directory.
+Explore coins
+View transition was skipped because document visibility state is hidden.
+Skipping view transition because document visibility state has become hidden.
+Skipping view transition because viewport size changed.
+An index route cannot have child routes.
+Select a Solana mainnet account.
+Wallet returned an invalid Solana address.
+Wallet connection declined.
+Could not disconnect. Please try again.
+Connect your wallet first.
+The wallet did not return a signed transaction.
+This wallet does not support message signing. Use a compatible wallet for callouts.
+The wallet changed the message. This signing format is not supported.
+Choose your Solana wallet to get started.
+Refresh unavailable. Showing last loaded launches.
+Refresh unavailable. Showing last loaded receipts.
+WebXRManager: Cannot change reference space type while presenting.
+Search the directory to discover a mission. Its available market data appears here.
+Refinery view unavailable. All transaction history remains accessible.
+No buyback or burn activity yet.
+Quote configuration verified. Final availability is checked again when you launch.
+Use a PNG, JPG, or WEBP image.
+Image must be 4 MB or smaller.
+Your token’s story starts here. Make it something worth sharing.
+Add an image for your token.
+Every great token starts with a story. What’s yours?
+No mission brief has been published for this token yet.
+YOUR WALLET
+ALL TOKENS
+Market cap
+Remove image
+Initial buy
+Paid in SOL
+Back to top
+Show chart
+Hide unavailable chart
+This token
+Copy wallet address
+Follow on X
+Launch complex
+Mission scanner
+Launch registry
+The next big idea
+Search symbol or company…
+Paste a Solana mint address
+Quote Pairs
+Copy transaction signature
+Copy mint address
+, reloading page...
+width=device-width, initial-scale=1.0
+Orbit | Find the heat.
+Launch and discover Solana tokens with flexible quote pairs. Create tokens through Pump.fun and follow transparent bonding progress.

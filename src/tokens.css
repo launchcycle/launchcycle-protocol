@@ -1,0 +1,20 @@
+/*
+  CYCLE design tokens. This is the ONLY file allowed to hold colour literals.
+  Palette provenance: k-means (k=8) over the brand logo pixels, every centroid
+  snapped to the nearest real pixel. Each value below records the pixel
+  coordinate and source file it was read from; scripts/gates.mjs re-reads those
+  pixels and fails the build on any mismatch.
+  Alpha-only tints elsewhere use color-mix() on these tokens, never new literals.
+*/
+:root {
+  --color-bg: #020a15;        /* px 0,0        brand/LOGO CYCLE JPG.jpg.jpeg  (field, 83% of pixels) */
+  --color-bg-deep: #01040b;   /* px 768,552    brand/LOGO CYCLE JPG.jpg.jpeg  (outline black) */
+  --color-surface: #031927;   /* px 1239,679   brand/LOGO CYCLE JPG.jpg.jpeg  (screen panel) */
+  --color-surface-2: #0a293c; /* px 1066,1163  brand/LOGO CYCLE PNG...png     (chassis shadow) */
+  --color-line: #113a50;      /* px 836,817    brand/LOGO CYCLE JPG.jpg.jpeg  (disc shade) */
+  --color-blue: #5082b5;      /* px 664,1067   brand/LOGO CYCLE JPG.jpg.jpeg  (hinge blue) */
+  --color-ice-soft: #7aa8d5;  /* px 1200,1174  brand/LOGO CYCLE PNG...png     (mid chassis) */
+  --color-ice: #bde0f6;       /* px 907,597    brand/LOGO CYCLE JPG.jpg.jpeg  (chassis light) */
+  --color-ice-hi: #d4effb;    /* px 817,1322   brand/LOGO CYCLE PNG...png     (highlight) */
+  --color-mint: #21d0f7;      /* px 1475,1379  brand/LOGO CYCLE PNG...png     (glow edge, most saturated) */
+}

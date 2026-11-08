@@ -1,0 +1,16 @@
+{
+  "name": "cycle",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CYCLE site for launchcycle.fun",
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "gates": "node scripts/gates.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.65.0",
+    "sharp": "^0.33.5"
+  },
+  "type": "module"
+}
